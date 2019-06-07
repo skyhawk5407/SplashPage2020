@@ -183,9 +183,13 @@ body {
     padding-bottom: 25vw;
 }
 
+#Recap .container {
+    margin-right: 0px;
+}
+
 #transport {
-    width: 50%;
-    height: 80%;
+    width: 100%;
+    height: 85%;
     position: relative;
     right: 0;
 }
@@ -201,11 +205,13 @@ body {
     z-index: 2;
 
 }
+
 /* FIXME? */
 .container {
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -260,6 +266,13 @@ body {
     margin-right: 1vw; */
 }
 
+#Get-Involved {
+    
+    background-image: url('../img/D4SD Triangle Bkg.png');
+    background-size: 100% 180%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
 
 #recapHead {
     color: #F1F7FF;
@@ -300,6 +313,16 @@ body {
     text-align: left;
 }
 
+#Keep-in-touch {
+    padding: 8rem 0;
+    background-image: url('../img/Fixed Overlay (Sign Up).png');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #Keep-in-touch p {
     color: #1A2F38;
     font-family: 'Montserrat', sans-serif;
@@ -317,6 +340,7 @@ body {
 
 .copyright {
     background-color: #1A2F38;
+    padding: 4rem 0 !important;
 }
 
 .copyright-text {
@@ -325,7 +349,6 @@ body {
     font-weight: lighter;
     color: #FFFFFF;
     text-align: center;
-
 }
 
 
@@ -333,6 +356,7 @@ a {
     color: #007bff;
 }
 
+/* TODO Media Queries for Our Process  */
 @media (max-width: 786px) {
     .hero-content .row {
         height: 15%;
@@ -375,6 +399,7 @@ a {
         padding-bottom: 10%;
         padding-top: 130%;
     }
+
     #Our-Process {
         top: 220vh;
     }
