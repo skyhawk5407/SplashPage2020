@@ -16,18 +16,20 @@ body {
 
 /* Masthead (Primary Banner Text) */
 .masthead {
-    background-size: 80% 100%;
+    background-size: 80% 110%;
     background-position: right bottom;
     background-image: url(../img/Splash_Page_Bkg_Triangle_2.png);
     background-repeat: no-repeat;
 }
 
+/* Title content */
 .hero-content {
     /* margin-left: 10%; */
     margin-left: 10vw;
     text-align: left;
 }
 
+/* Banner Title */
 #MainTitle {
     box-sizing: border-box;
     color: #1A2F38;
@@ -38,7 +40,9 @@ body {
     position: relative;
 }
 
+/* Paragraph Content */
 .hero-text {
+    width: 90%;
     display: block;
     box-sizing: border-box;
     color: #1A2F38;
@@ -49,7 +53,12 @@ body {
     position: relative;
 }
 
+
 /* Link to Subpages: Overhead */
+.overhead-wrapper {
+    width: 90%;
+}
+
 .overhead {
     display: block;
     padding-top: 2em;
@@ -64,10 +73,9 @@ body {
     font-size: 1.2em;
     color: #F1F7FF;
 }
+
 .title {
     padding-right: 15px;
-}
-.internal {
 }
 
 .overhead>.row>.col>a {
@@ -131,8 +139,14 @@ body {
 }
 
 /* Buttons */
+/* .btn-wrapper-banner {
+    width: 80%;
+    height: 100%;
+} */
 
-.button2 {
+.main-button {
+    text-decoration: none !important;
+    padding: .5em 0;
     width: 10em;
     height: 3em;
     display: inline-block;
@@ -179,6 +193,7 @@ body {
 
 .btn-outline-primary:hover {
     color: #fff;
+    font-weight: bold;
     background-color: #5662E5;
     border-color: #5662E5
 }
