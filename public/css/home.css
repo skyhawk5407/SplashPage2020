@@ -1,4 +1,6 @@
 body {
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: rgb(229, 235, 244) !important;
     overflow-x: hidden;
 }
@@ -53,13 +55,10 @@ body {
     position: relative;
 }
 
-
-/* Link to Subpages: Overhead */
-.overhead-wrapper {
-    width: 90%;
-}
-
+/* Overhead links to sub-pages */
+/* TODO ADD ANIMATIONS MEDIA QUERIES FOR THIS */
 .overhead {
+    top: 100vh;
     display: block;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -74,6 +73,7 @@ body {
     color: #F1F7FF;
 }
 
+/* Title element of overhead */
 .title {
     padding-right: 15px;
 }
@@ -84,10 +84,10 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+
 /* What is D4SD */
-.portfolio {
+#portfolio {
     background-size: 100% 100%;
-    /* background-size: 100vw 100vh; */
     background-repeat: no-repeat;
     background-image: url(../img/TransparentOverlay.png);
     background-color: #EDF3FA;
@@ -157,6 +157,10 @@ body {
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+}
+
+.a {
+    text-decoration: none !important;
 }
 
 #buttonW {
@@ -289,7 +293,7 @@ body {
 }
 
 #Get-Involved {
-    
+
     background-image: url('../img/D4SD Triangle Bkg.png');
     background-size: 100% 180%;
     background-position: right bottom;
@@ -345,6 +349,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #Keep-in-touch p {
     color: #1A2F38;
     font-family: 'Montserrat', sans-serif;
@@ -445,5 +450,12 @@ a {
     #about {
         padding-bottom: 10%;
         padding-top: 90%;
+    }
+}
+
+/* Set for desktop */
+@media (min-height: 850px) and (min-width: 1167px) {
+    .overhead {
+        top: 80vh;
     }
 }
