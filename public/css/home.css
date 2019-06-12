@@ -14,7 +14,7 @@ body {
     margin-left: 5vw;
 }
 
-/* Masthead */
+/* Masthead (Primary Banner Text) */
 .masthead {
     background-size: 80% 100%;
     background-position: right bottom;
@@ -54,6 +54,8 @@ body {
     display: block;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-left: 2%;
+    padding-right: 2%;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -61,6 +63,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     color: #F1F7FF;
+}
+.title {
+    padding-right: 15px;
+}
+.internal {
 }
 
 .overhead>.row>.col>a {
