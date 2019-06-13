@@ -56,14 +56,11 @@ body {
 }
 
 /* Overhead links to sub-pages */
-/* TODO ADD ANIMATIONS MEDIA QUERIES FOR THIS */
+/* TODO MEDIA QUERIES FOR THIS */
 .overhead {
     top: 100vh;
     display: block;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 2em 2%; /* Top/Bot, Left/Right */
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -71,6 +68,28 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     color: #F1F7FF;
+}
+
+.selectLink {
+    display: block;
+    color: #5662E5;
+    text-decoration: none;
+}
+
+.selectLink::after {
+    position: absolute;
+    top: -2em;
+    content: '';
+    display: block;
+    width: 0;
+    height: .5rem;
+    background: #5662E5;
+    transition: width .2s;
+}
+
+.selectLink:hover::after {
+    width: 60%;
+    transition: width .2s;
 }
 
 /* Title element of overhead */
@@ -146,7 +165,7 @@ body {
 
 .main-button {
     text-decoration: none !important;
-    padding: .5em 0;
+    padding: .6em 0;
     width: 10em;
     height: 3em;
     display: inline-block;
@@ -457,5 +476,10 @@ a {
 @media (min-height: 850px) and (min-width: 1167px) {
     .overhead {
         top: 80vh;
+    }
+
+    .selectLink:hover::after {
+        width: 50%;
+        transition: width .3s;
     }
 }
