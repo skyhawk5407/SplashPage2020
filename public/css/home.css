@@ -9,10 +9,88 @@ body {
     background-color: rgb(229, 235, 244) !important;
 }
 
+/* Global settings */
+.a {
+    text-decoration: none !important;
+}
+
+a {
+    color: #007bff;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Buttons */
+/* .btn-wrapper-banner {
+    width: 80%;
+    height: 100%;
+} */
+
+.main-button {
+    text-decoration: none !important;
+    padding: .6em 0;
+    width: 10em;
+    height: 3em;
+    display: inline-block;
+    text-align: center;
+    border: 0.2em solid #5662E5;
+    color: #5662E5;
+    font-size: 1em;
+    border-radius: 2em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+#buttonW {
+    width: 10em;
+    height: 3em;
+    display: inline-block;
+    text-align: center;
+    border: 0.2em solid #fff;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 2em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+
+#buttonW a {
+    color: #fff;
+    font-size: 1em !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#buttonW:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: black;
+    border-color: #fff
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #5662E5;
+    border-color: #5662E5
+}
+
+
+/* Headers for most sections */
+h2 {
+    color: #5662E5;
+    font: 'Montserrat';
+    font-size: 3em;
+    font-weight: bold;
+}
+
 /* Navigation */
-#mainNav {
-    top: 0;
-    /* margin-left: 5%; */
+#mainNav .container {
     margin-left: 5vw;
 }
 
@@ -60,16 +138,18 @@ body {
 .overhead {
     top: 100vh;
     display: block;
-    padding: 2em 2%; /* Top/Bot, Left/Right */
+    padding: 2em 2%;
+    /* Top/Bot, Left/Right */
     position: absolute;
     z-index: 2;
     width: 100%;
     background-color: #1A2F38;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #F1F7FF;
 }
 
+/* Animations */
 .selectLink {
     display: block;
     color: #5662E5;
@@ -93,181 +173,56 @@ body {
     transition: width .2s;
 }
 
-/* Title element of overhead */
-.title {
-    padding-right: 15px;
-}
-
-.overhead>.row>.col>a {
-    color: #F1F7FF !important;
-    font-size: 1em !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
 
 /* What is D4SD */
 #portfolio {
-    background-size: 100% 100%;
+    background-size: 100% 130%;
     background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
     background-image: url(../img/TransparentOverlay.png);
     background-color: #EDF3FA;
     padding-bottom: 70%;
-    /* padding-bottom: 70vh; */
-    /* background-color: */
 }
 
-#What-D4SD {
+/* Contains Text/Image for What-D4SD */
+.What-D4SD {
+    /* padding-top: 10%; */
     margin-top: 10%;
 }
 
-.what-is {
-    font-size: 3em;
-    color: #5662E5;
-    font-weight: bold;
-    margin-bottom: 10%;
-}
-
-.about {
-    /* left: 5em; */
-}
-
-
-
-.about-p1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    color: #F1F7FF;
-    font-size: 1.2em;
-}
-
-.about-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #F1F7FF;
-    font-size: 3em;
-}
-
+/* Image for What-D4SD section */
 .aerial {
     width: 40vw;
-    height: 60vh;
+    height: 70vh;
 }
 
-.m8s {
-    width: 50.5vw;
-    height: 60vh;
-    right: 0;
+.portfolio-content {
+    padding: 3%;
+    padding-left: 10%;
 }
 
-/* Buttons */
-/* .btn-wrapper-banner {
-    width: 80%;
-    height: 100%;
-} */
-
-.main-button {
-    text-decoration: none !important;
-    padding: .6em 0;
-    width: 10em;
-    height: 3em;
-    display: inline-block;
-    text-align: center;
-    border: 0.2em solid #5662E5;
-    color: #5662E5;
-    font-size: 1em;
-    border-radius: 2em;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
+.portfolio-text {
+    width: 90%;
 }
 
-.a {
-    text-decoration: none !important;
-}
-
-#buttonW {
-    width: 10em;
-    height: 3em;
-    display: inline-block;
-    text-align: center;
-    border: 0.2em solid #fff;
-    color: #fff;
-    font-size: 1em;
-    border-radius: 2em;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-
-#button4 {
-    width: 10em;
-    height: 3em;
-    display: inline-block;
-    text-align: center;
-    border: 0.2em solid #707070;
-    color: #707070;
-    font-size: 1em;
-    border-radius: 2em;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-
-#buttonW a {
-    color: #fff;
-    font-size: 1em !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.btn-outline-primary:hover {
-    color: #fff;
-    font-weight: bold;
-    background-color: #5662E5;
-    border-color: #5662E5
-}
-
-/* TODO */
-#about {
-    background-color: #1A2F38;
-    padding-top: 100vh;
-    padding-bottom: 25vw;
-}
-
-#Recap .container {
-    margin-right: 0px;
-}
-
-#transport {
-    width: 100%;
-    height: 85%;
-    position: relative;
-    right: 0;
-}
-
+/* Our Process Section */
 #Our-Process {
     background-color: #FFFFFF;
     margin: auto;
     position: absolute;
     width: 80%;
-    padding-bottom: 10em;
-    top: 200vh;
+    padding: 8em 6em;
+    top: 230vh;
     left: 10%;
     z-index: 2;
-
 }
 
-/* FIXME? */
-.container {
-    padding-right: 0px;
-    padding-left: 0px;
+#Our-Process .container {
+    /* margin-left: 0vw !important; */
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.grid-item {
-    text-align: left;
-}
-
-.grid-item-img {
+#Our-Process h2 {
     text-align: center;
 }
 
@@ -293,6 +248,74 @@ body {
     font-size: 1.2em;
 }
 
+.title {
+    padding-right: 15px;
+}
+
+.overhead>.row>.col>a {
+    color: #F1F7FF !important;
+    font-size: 1em !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Title element of overhead */
+.title {
+    padding-right: 15px;
+}
+
+.overhead>.row>.col>a {
+    color: #F1F7FF !important;
+    font-size: 1em !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Who are we section */
+
+/* TODO */
+#about {
+    background-color: #1A2F38;
+    padding-top: 110vh;
+    padding-bottom: 25vh;
+}
+
+#about .hero-text {
+    font-weight: 100;
+    color: #F1F7FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+#about h2 {
+    color: #F1F7FF;
+}
+
+#about .portfolio-content {
+    margin: 5% 0%;
+    padding-left: 0%;
+}
+
+.about-img {
+    width: 50.5vw;
+    height: 70vh;
+    right: 0;
+}
+
+
+/* Get Involved section */
+#Get-Involved {
+    padding: 10% 0%;
+    background-image: url('../img/D4SD Triangle Bkg.png');
+    background-size: 100% 180%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+#Get-Involved h2 {
+    color: #5662E5;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
 .card-title {
     width: 105%;
     text-align: center;
@@ -312,11 +335,10 @@ body {
     margin-right: 1vw; */
 }
 
-#Get-Involved {
 
-    background-image: url('../img/D4SD Triangle Bkg.png');
-    background-size: 100% 180%;
-    background-position: right bottom;
+/* Recap Section */
+#Recap {
+    background-image: url("../img/transport-1.png");
     background-repeat: no-repeat;
 }
 
@@ -324,38 +346,36 @@ body {
     color: #F1F7FF;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: left;
 }
 
-#recapHead2 {
+#Recap h2 {
     color: #F1F7FF;
-    font: 'Montserrat';
-    font-size: 3em;
-    font-weight: bold;
     text-align: left;
 }
 
 #recapPar {
-    /* width: 744px; */
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: left;
 }
 
+/* #Recap .container {
+    margin-right: 0px;
+} */
 
-#Recap {
-    background-image: url("../img/transport-1.png");
+#transport {
+    width: 55vw;
+    height: 75vh;
 }
 
 
+/* Contact section */
 #Keep-in-touch h2 {
     color: #1A2F38;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    font-weight: bold;
     text-align: left;
 }
 
@@ -374,15 +394,28 @@ body {
     color: #1A2F38;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    font-weight: light;
+    font-weight: 300;
     text-align: left;
 }
 
 .form-control {
-    background-color: transparent;
-    color: #000000;
-    border-color: #000;
+    background-color: #F1F7FF;
+    color: #F1F7FF;
+    border-color: #5662E5;
 
+}
+
+#Keep-in-touch .main-button {
+    text-decoration: none !important;
+    border: 0.2em solid #1A2F38;
+    color: #1A2F38;
+}
+
+#Keep-in-touch .btn-outline-primary:hover {
+    color: #1A2F38;
+    font-weight: bold;
+    background-color: #F1F7FF;
+    border-color: #5662E5
 }
 
 .copyright {
@@ -399,12 +432,8 @@ body {
 }
 
 
-a {
-    color: #007bff;
-}
-
 /* TODO Media Queries for Our Process  */
-@media (max-width: 786px) {
+/* @media (max-width: 786px) {
     .hero-content .row {
         height: 15%;
         width: 40vw;
@@ -471,16 +500,16 @@ a {
         padding-bottom: 10%;
         padding-top: 90%;
     }
-}
+} */
 
 /* Set for desktop */
-@media (min-height: 850px) and (min-width: 1167px) {
+/* @media only screen and (min-height: 995px) {
     .overhead {
-        top: 80vh;
+        top: 60vh;
     }
 
     .selectLink:hover::after {
         width: 50%;
         transition: width .3s;
     }
-}
+} */
