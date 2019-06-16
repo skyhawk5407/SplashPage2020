@@ -109,17 +109,6 @@ h2 {
     text-align: left;
 }
 
-/* Banner Title */
-#MainTitle {
-    box-sizing: border-box;
-    color: #1A2F38;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3em;
-    position: relative;
-}
-
 /* Paragraph Content */
 .hero-text {
     width: 90%;
@@ -133,20 +122,51 @@ h2 {
     position: relative;
 }
 
+/* Banner Title */
+#MainTitle {
+    box-sizing: border-box;
+    color: #1A2F38;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    position: relative;
+}
+
 /* Overhead links to sub-pages */
-/* TODO MEDIA QUERIES FOR THIS */
 .overhead {
-    top: 100vh;
-    display: block;
-    padding: 2em 2%;
+    margin-left: 2%;
     /* Top/Bot, Left/Right */
-    position: absolute;
+    position: relative;
+    bottom: 4em;
     z-index: 2;
-    width: 100%;
+    width: 95%;
     background-color: #1A2F38;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #F1F7FF;
+}
+
+.spacing {
+    padding: 2em 2em;
+}
+
+/* 
+.hidden{
+    display: none;
+} */
+
+.overhead>.row>.spacing>.col-auto>a1 {
+    color: #F1F7FF !important;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.overhead>.row>.spacing>.col-auto>a {
+    color: #F1F7FF !important;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Animations */
@@ -164,46 +184,71 @@ h2 {
     width: 0;
     height: .5rem;
     background: #5662E5;
-    transition: width .2s;
+    transition: width .4s;
     /* Fix this later to animate better */
 }
 
 .selectLink:hover::after {
-    width: 60%;
-    transition: width .2s;
+    width: 100%;
+    transition: width .4s;
 }
 
 
 /* What is D4SD */
 #portfolio {
-    background-size: 100% 130%;
+    background-size: 150% 115%;
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
     background-image: url(../img/TransparentOverlay.png);
     background-color: #EDF3FA;
-    padding-bottom: 70%;
+    padding-bottom: 60%;
+    margin-top: -10%;
+}
+
+#portfolio .row {
+    align-items: center;
 }
 
 /* Contains Text/Image for What-D4SD */
 .What-D4SD {
-    /* padding-top: 10%; */
-    margin-top: 10%;
+    padding-top: 10%;
+    align-items: center;
 }
 
-/* Image for What-D4SD section */
-.aerial {
-    width: 40vw;
-    height: 70vh;
+/* EXP */
+.square {
+    float: left;
+    position: relative;
+    width: 45%;
+    padding-bottom: 38%;
+    /* = width for a 1:1 aspect ratio */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* you change this to "contain" if you don't want the images to be cropped */
 }
+
+.img {
+    background-image: url('../img/aerial-sd.png');
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+/* EXP */
 
 .portfolio-content {
-    padding: 3%;
-    padding-left: 10%;
+    padding: 5% 5%;
+    width: 50%;
+    margin-left: 5%;
 }
 
 .portfolio-text {
     width: 90%;
+}
+
+.padding {
+    margin-top: 8%;
 }
 
 /* Our Process Section */
@@ -222,10 +267,6 @@ h2 {
     /* margin-left: 0vw !important; */
 }
 
-#Our-Process h2 {
-    text-align: center;
-}
-
 .our-process h {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -234,6 +275,7 @@ h2 {
 }
 
 .our-process h2 {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #5662E5;
@@ -248,39 +290,24 @@ h2 {
     font-size: 1.2em;
 }
 
-.title {
-    padding-right: 15px;
-}
-
-.overhead>.row>.col>a {
-    color: #F1F7FF !important;
-    font-size: 1em !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-/* Title element of overhead */
-.title {
-    padding-right: 15px;
-}
-
-.overhead>.row>.col>a {
-    color: #F1F7FF !important;
-    font-size: 1em !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
 /* Who are we section */
-
-/* TODO */
 #about {
     background-color: #1A2F38;
-    padding-top: 110vh;
-    padding-bottom: 25vh;
+    padding-top: 108vh;
+    padding-bottom: 15vh;
+}
+
+#about {
+    align-items: center;
+}
+
+#about .padding {
+    margin-top: 5vh;
 }
 
 #about .hero-text {
     font-weight: 100;
-    color: #F1F7FF;
+    color: rgba(241, 247, 255, 0.562);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
 }
@@ -290,14 +317,14 @@ h2 {
 }
 
 #about .portfolio-content {
-    margin: 5% 0%;
-    padding-left: 0%;
+    align-self: center;
+    padding: 5% 5%;
+    width: 50%;
+    margin-left: 5%;
 }
 
-.about-img {
-    width: 50.5vw;
-    height: 70vh;
-    right: 0;
+.img1 {
+    background-image: url('../img/IMG_1967.png');
 }
 
 
@@ -310,14 +337,22 @@ h2 {
     background-repeat: no-repeat;
 }
 
+#Get-Involved .container-flex {
+    margin: 0% 5%;
+}
+
 #Get-Involved h2 {
     color: #5662E5;
     text-align: center;
     margin-bottom: 4%;
 }
 
+.wrapper {
+    min-height: 100%;
+}
+
 .card-title {
-    width: 105%;
+    width: 100%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -340,6 +375,16 @@ h2 {
 #Recap {
     background-image: url("../img/transport-1.png");
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: calc(6em+100%) calc(6em+100%);
+}
+
+#Recap .container-flex {
+    margin-left: 5vw;
+}
+
+#Recap .row {
+    align-items: center;
 }
 
 #recapHead {
@@ -372,11 +417,28 @@ h2 {
     height: 75vh;
 }
 
+.img3 {
+    background-image: url('../img/transport.png');
+}
+
+#Recap .square {}
+
+#Recap .hero-text {
+    font-weight: 100;
+    color: rgba(241, 247, 255, 0.562);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+#Recap .portfolio-content {
+    width: 50%;
+    margin-left: 5%;
+}
 
 /* Contact section */
-#Keep-in-touch h2 {
-    color: #1A2F38;
-    text-align: left;
+
+#Keep-in-touch .container {
+    margin-left: 8%;
 }
 
 #Keep-in-touch {
@@ -388,6 +450,11 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#Keep-in-touch h2 {
+    color: #1A2F38;
+    text-align: left;
 }
 
 #Keep-in-touch p {
@@ -431,41 +498,12 @@ h2 {
     text-align: center;
 }
 
+/**********************************/
+/********BREAKPOINTS BELOW*********/
+/**********************************/
 
-/* TODO Media Queries for Our Process  */
-/* @media (max-width: 786px) {
-    .hero-content .row {
-        height: 15%;
-        width: 40vw;
-        max-width: 40vw;
-    }
-
-    #pad {
-        width: 0vw;
-        height: 0vh;
-    }
-
-    #What-D4SD {
-        margin-top: 40%;
-    }
-
-    #Our-Process {
-        top: 250vh;
-    }
-
-    .aerial {
-        width: 100vw;
-    }
-}
-
-@media (min-width: 786px) and (max-width: 873px) {
-    #about {
-        padding-bottom: 10%;
-        padding-top: 130%;
-    }
-}
-
-@media (min-width: 786px) and (max-width: 992px) {
+/* TODO MOBILE VERSION */
+@media (max-width: 992px) {
     #What-D4SD {
         margin-top: 40%;
         height: 100vh;
@@ -481,35 +519,201 @@ h2 {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
-    #What-D4SD {
-        margin-top: 20%;
-        padding-bottom: 10%;
+/* Media Queries for screen heights greater than 800px */
+/* Ipad Pro Tablets */
+@media (min-height: 1366px) and (min-width: 1024px) {
+    #MainTitle {
+        font-size: 2.6em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-text {
+        font-size: .8em !important;
+    }
+
+    .spacing {
+        padding: 2em 1em;
+    }
+
+    .overhead>.row>.spacing>.col-auto>a {
+        font-size: .6em;
+    }
+
+    #portfolio {
+        padding-bottom: 100%;
+        background-size: 150% 130%;
+        margin-top: -20%;
+    }
+
+    #Our-Process {
+        top: 110vh;
+    }
+
+    .our-process h2 {
+        font-size: 2.2em;
+    }
+
+    .our-process p {
+        font-size: .8em;
+    }
+
+    .our-process h {
+        font-size: 1.6em;
+    }
+
+    #about {
+        padding-top: 40vh;
+        padding-bottom: 5vh;
+    }
+
+    .card-title {
+        font-size: 1.25em;
+    }
+
+    #Get-Involved .main-button {
+        width: auto;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+/* Larger than 13" laptops */
+/* Laptops Macbook */
+@media (min-height: 800px) and (min-width: 1280px) {
+    #portfolio {
+        padding-bottom: 90%;
+        background-size: 150% 130%;
+        margin-top: -15%;
+    }
+
+    .overhead>.row>.spacing>.col-auto>a1 {
+        font-size: 1.1em;
+    }
+
+    .overhead>.row>.spacing>.col-auto>a {
+        font-size: .8em;
+    }
+
+    #portfolio {
+        padding-bottom: 85%;
+        background-size: 150% 130%;
+        margin-top: -15%;
+    }
+
     #about {
-        padding-bottom: 10%;
-        padding-top: 110%;
+        padding-top: 95vh;
+        padding-bottom: 15vh;
+    }
+
+
+    #Our-Process {
+        top: 220vh;
+    }
+
+    #about {
+        padding-top: 95vh;
+        padding-bottom: 15vh;
+    }
+
+    .card-title {
+        font-size: 1.5em;
     }
 }
 
-@media (min-width: 1100px) and (max-width: 1200px) {
-    #about {
-        padding-bottom: 10%;
-        padding-top: 90%;
-    }
-} */
+/* Laptops Macbook and up */
+@media (min-height: 900px) and (min-width: 1440px) {
 
-/* Set for desktop */
-/* @media only screen and (min-height: 995px) {
+    #MainTitle {
+        font-size: 3.8em;
+    }
+
+    h2 {
+        font-size: 3.4em !important;
+    }
+
+    .masthead {
+        padding-bottom: 10rem;
+    }
+
+    .hero-text {
+        font-size: 1.3em !important;
+    }
+
+    .spacing {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .overhead {
-        top: 60vh;
+        bottom: 6em;
     }
 
-    .selectLink:hover::after {
-        width: 50%;
-        transition: width .3s;
+    .overhead>.row>.spacing>.col-auto>a1 {
+        font-size: 1.4em;
     }
-} */
+
+    .overhead>.row>.spacing>.col-auto>a {
+        font-size: 1em;
+    }
+
+    #portfolio {
+        padding-bottom: 80%;
+        background-size: 150% 130%;
+        margin-top: -15%;
+    }
+
+    #Our-Process {
+        top: 220vh;
+    }
+
+    .our-process p {
+        font-size: 1.4em;
+    }
+
+    .our-process h {
+        font-size: 2.4em;
+    }
+
+    .card-title {
+        font-size: 1.8em;
+    }
+
+    #about {
+        padding-top: 95vh;
+        padding-bottom: 15vh;
+    }
+
+}
+
+/* Larger than 15" */
+@media (min-width: 1600px) {
+    #Our-Process {
+        top: 190vh;
+    }
+
+    #about {
+        padding-top: 70vh;
+    }
+
+    .card-title {
+        font-size: 2em;
+    }
+}
+
+/* Set for Monitors or 17inch */
+@media only screen and (min-width: 1900px) {
+    .spacing {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portfolio {
+        margin-top: -10%;
+    }
+
+    .What-D4SD {
+        margin-top: 5%;
+        align-items: center;
+    }
+}
