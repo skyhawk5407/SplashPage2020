@@ -5,6 +5,11 @@ body {
     overflow-x: hidden;
 }
 
+@media (min-width: 992px) .col-lg-5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 .bg-primary {
     background-color: rgb(229, 235, 244) !important;
 }
@@ -91,7 +96,7 @@ h2 {
 
 /* Navigation */
 #mainNav .container {
-    margin-left: 5vw;
+    margin-left: 2%;
 }
 
 /* Masthead (Primary Banner Text) */
@@ -105,8 +110,12 @@ h2 {
 /* Title content */
 .hero-content {
     /* margin-left: 10%; */
-    margin-left: 10vw;
+    margin-left: 6vw;
     text-align: left;
+}
+
+.mobile-hero-text {
+    display: none;
 }
 
 /* Paragraph Content */
@@ -151,10 +160,10 @@ h2 {
     padding: 2em 2em;
 }
 
-/* 
+
 .hidden{
     display: none;
-} */
+}
 
 .overhead>.row>.spacing>.col-auto>a1 {
     color: #F1F7FF !important;
@@ -357,7 +366,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #5662E5;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 .card-image {
@@ -503,7 +512,94 @@ h2 {
 /**********************************/
 
 /* TODO MOBILE VERSION */
-@media (max-width: 992px) {
+@media (max-width: 600px) {
+    #mainNav .container a img {
+        width: 70%;
+    }
+    .navbar {
+        width: 100vw;
+        /* background-color: #F1F7FF; */
+        background-color: transparent;
+        opacity: 85%;
+    }
+
+    .main-button {
+        padding: auto auto;
+        width: 9em;
+        height: 3em;
+        display: inline-block;
+        text-align: center;
+        border: 0.2em solid #5662E5;
+        color: #5662E5;
+        font-size: .8em;
+        border-radius: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    .ePad {
+        display: none;
+    }
+    
+    /* #buttonW {
+        width: 10em;
+        height: 3em;
+        display: inline-block;
+        text-align: center;
+        border: 0.2em solid #fff;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 2em;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+       
+    #buttonW a {
+        color: #fff;
+        font-size: 1em !important;
+        font-family: 'Montserrat', sans-serif !important;
+    } */
+
+    /* Landing screen */
+    .masthead {
+        padding-top: 6rem;
+        background-image: url('../img/D4SD Triangle Bkg.png');
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 130% 170%;
+    }
+
+    #MainTitle {
+        color: #5662E5;
+        font-size: 2.0rem;
+    }
+
+    .hero-content {
+        width: 85%;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .mobile-hero-text {
+        display: block;
+        color: #1A2F38;
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    /* Overhead Mobile */
+    .overhead {
+        display: none;
+    }
+
+    .mobile-overhead {
+        
+    }
+
     #What-D4SD {
         margin-top: 40%;
         height: 100vh;
@@ -579,8 +675,8 @@ h2 {
 }
 
 /* Larger than 13" laptops */
-/* Laptops Macbook */
-@media (min-height: 800px) and (min-width: 1280px) {
+/* Laptops Macbook (min-height: 800px)s*/
+@media screen and (min-width: 1280px) {
     #portfolio {
         padding-bottom: 90%;
         background-size: 150% 130%;
@@ -618,11 +714,13 @@ h2 {
 
     .card-title {
         font-size: 1.5em;
+        padding: 0% 5%;
+        text-align: center
     }
 }
 
-/* Laptops Macbook and up */
-@media (min-height: 900px) and (min-width: 1440px) {
+/* Laptops Macbook and up (min-height: 900px) and */
+@media screen and (min-width: 1440px) {
 
     #MainTitle {
         font-size: 3.8em;
@@ -676,6 +774,7 @@ h2 {
     }
 
     .card-title {
+        padding: 1%;
         font-size: 1.8em;
     }
 
@@ -698,6 +797,12 @@ h2 {
 
     .card-title {
         font-size: 2em;
+        padding: 8%;
+    }
+
+    /* Headers for most sections */
+    h2 {
+        font-size: 3.6em !important;
     }
 }
 
