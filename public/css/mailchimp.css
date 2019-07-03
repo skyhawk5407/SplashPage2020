@@ -1,0 +1,48 @@
+#mailchimp h2 {
+    color: #1A2F38;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#mailchimp p {
+    color: #1A2F38;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    font-weight: light;
+    text-align: left;
+}
+
+#mailchimp li {
+    color: #1A2F38;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: light;
+    padding-bottom: 2% !important;
+}
+
+#mailchimp * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mc_embed_signup_scroll .col-6 {
+    padding-left: 0;
+}
+
+.mc-field-group strong {
+    font-size: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#mc-embedded-subscribe {
+    width: 9em !important;
+    height: 2.75em !important;
+    border: 0.15em solid #1A2F38 !important;
+    color: #1A2F38 !important;
+    font-size: 1.2em !important;
+    border-radius: 2em !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: transparent !important;
+}
