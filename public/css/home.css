@@ -198,7 +198,7 @@ h2 {
 }
 
 .selectLink:hover::after {
-    width: 100%;
+    width: 90%;
     transition: width .4s;
 }
 
@@ -444,8 +444,7 @@ h2 {
     margin-left: 5%;
 }
 
-/* Contact section */
-
+/* Mailchimp Contact section */
 #Keep-in-touch .container {
     margin-left: 8%;
 }
@@ -461,13 +460,18 @@ h2 {
     background-size: cover;
 }
 
+#mc_embed_signup {
+    background-color: transparent;
+}
+
+
 #Keep-in-touch h2 {
-    color: #1A2F38;
+    color: #F1F7FF !important;
     text-align: left;
 }
 
 #Keep-in-touch p {
-    color: #1A2F38;
+    color: #F1F7FF !important;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
@@ -481,17 +485,21 @@ h2 {
 
 }
 
-#Keep-in-touch .main-button {
-    text-decoration: none !important;
-    border: 0.2em solid #1A2F38;
-    color: #1A2F38;
+#mc_embed_signup .button {
+    font-weight: bold;
+    color: #F1F7FF !important;
+    border: 0.15em solid #F1F7FF !important;
 }
 
-#Keep-in-touch .btn-outline-primary:hover {
-    color: #1A2F38;
+#mc-embedded-subscribe:hover {
+    color: #1A2F38 !important;
     font-weight: bold;
-    background-color: #F1F7FF;
-    border-color: #5662E5
+    background-color: #F1F7FF !important;
+    border-color: #1A2F38 !important;
+}
+
+#mailchimp * {
+    color: #F1F7FF;
 }
 
 .copyright {
@@ -507,9 +515,9 @@ h2 {
     text-align: center;
 }
 
-/**********************************/
-/********BREAKPOINTS BELOW*********/
-/**********************************/
+/************************************/
+/******** BREAKPOINTS BELOW *********/
+/************************************/
 
 /* TODO MOBILE VERSION */
 @media (max-width: 600px) {
@@ -675,9 +683,9 @@ h2 {
 
 /* Larger than 13" laptops */
 /* Laptops Macbook (min-height: 800px)s*/
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     #portfolio {
-        padding-bottom: 90%;
+        padding-bottom: 80%;
         background-size: 150% 130%;
         margin-top: -15%;
     }
@@ -703,7 +711,7 @@ h2 {
 
 
     #Our-Process {
-        top: 220vh;
+        top: 200vh;
     }
 
     #about {
@@ -718,16 +726,15 @@ h2 {
     }
 }
 
-
 /* Laptops Macbook and up (min-height: 900px) and */
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
 
     #MainTitle {
-        font-size: 3.8em;
+        font-size: 3.4em;
     }
 
     h2 {
-        font-size: 3.4em !important;
+        font-size: 3.2em !important;
     }
 
     .masthead {
@@ -762,7 +769,7 @@ h2 {
     }
 
     #Our-Process {
-        top: 220vh;
+        top: 200vh;
     }
 
     .our-process p {
@@ -779,41 +786,68 @@ h2 {
     }
 
     #about {
-        padding-top: 95vh;
-        padding-bottom: 15vh;
+        padding-top: 110vh;
+        padding-bottom: 20vh;
     }
 
 }
 
-@media screen and (min-width: 1440px) and (max-height: 880px) {
+@media (min-width: 1440px) and (max-height: 880px) {
     #Our-Process {
-        top: 240vh;
+        top: 235vh;
+    }
+
+    #portfolio {
+        padding-bottom: 75%;
+    }
+    
+    #about {
+        padding-top: 125vh;
+        padding-bottom: 25vh;
     }
 }
 
 /* Larger than 15" */
 @media (min-width: 1600px) {
+
+    .hero-content {
+        max-width: 43%;
+    }
+
     #Our-Process {
-        top: 190vh;
+        top: 175vh;
     }
 
     #about {
-        padding-top: 70vh;
+        padding-top: 90vh;
     }
 
     .card-title {
-        font-size: 2em;
+        font-size: 1.9em;
         padding: 8%;
+    }
+
+    #portfolio {
+        margin-top: -10%;
+        padding-bottom: 60%;
     }
 
     /* Headers for most sections */
     h2 {
-        font-size: 3.6em !important;
+        font-size: 3.2em !important;
     }
 }
 
-/* Set for Monitors or 17inch */
-@media only screen and (min-width: 1900px) {
+/* Set 17inch laptops */
+@media (min-width: 1900px) {
+    #MainTitle {
+        font-size: 3.8em;
+    }
+
+    #Our-Process {
+        top: 160vh;
+    }
+
     .spacing {
         margin-left: auto;
         margin-right: auto;
@@ -821,6 +855,38 @@ h2 {
 
     #portfolio {
         margin-top: -10%;
+        padding-bottom: 60%;
+    }
+
+    .What-D4SD {
+        margin-top: 5%;
+        align-items: center;
+    }
+}
+
+/* Set for Monitors*/
+@media (min-width: 1900px) and (max-height: 1199px) {
+    #MainTitle {
+        font-size: 3.8em;
+    }
+
+    #Our-Process {
+        top: 160vh;
+        width: 80%;
+        padding: 8em 6em;
+        top: 200vh;
+        left: 10%;
+        z-index: 2;
+    }
+
+    .spacing {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portfolio {
+        margin-top: -10%;
+        padding-bottom: 70%;
     }
 
     .What-D4SD {
