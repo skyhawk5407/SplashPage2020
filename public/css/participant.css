@@ -3,11 +3,6 @@
 /* @media all and (max-width: 1024px)  */
 /* {...} */
 
-/* TODO DESIGN FOR MOBILE: CHECK d4sd.org version. Make sure you REM the text and REM the images to scale down */
-body {
-    background-color: rgb(229, 235, 244) !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
 
 .masthead {
     /* position: fixed; Experiment... */
@@ -40,9 +35,12 @@ body {
 
 #mainNav {
     top: 0;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
+.col-6 {
+    padding: 0 0;
+}
 
 /* Why You Should Participate */
 /* .page-section .container .row .col-md-3 .col-lg-3 {
@@ -97,9 +95,19 @@ a {
     color: #007bff;
 }
 
+#mc-embedded-subscribe {
+    width: 9em !important;
+    height: 2.75em !important;
+    border: 0.15em solid #1A2F38 !important;
+    color: #1A2F38 !important;
+    font-size: 1.2em !important;
+    border-radius: 2em !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: transparent !important;
+}
 
 /* Section: Contact */
-#Contact .container {
+/* #Contact .container {
     text-align: left;
     margin-left: 6.82%;
 }
@@ -117,7 +125,7 @@ a {
     font-weight: 300;
     font-size: 1em;
     color: #1A2F38;
-}
+} */
 
 .copyright {
     font-family: 'Montserrat', sans-serif;

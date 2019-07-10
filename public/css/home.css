@@ -5,6 +5,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 /* @media (min-width: 992px) .col-lg-5 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -460,11 +462,6 @@ h2 {
     background-size: cover;
 }
 
-#mc_embed_signup {
-    background-color: transparent;
-}
-
-
 #Keep-in-touch h2 {
     color: #F1F7FF !important;
     text-align: left;
@@ -483,23 +480,6 @@ h2 {
     color: #F1F7FF;
     border-color: #5662E5;
 
-}
-
-#mc_embed_signup .button {
-    font-weight: bold;
-    color: #F1F7FF !important;
-    border: 0.15em solid #F1F7FF !important;
-}
-
-#mc-embedded-subscribe:hover {
-    color: #1A2F38 !important;
-    font-weight: bold;
-    background-color: #F1F7FF !important;
-    border-color: #1A2F38 !important;
-}
-
-#mailchimp * {
-    color: #F1F7FF;
 }
 
 .copyright {
@@ -845,7 +825,7 @@ h2 {
     }
 
     #Our-Process {
-        top: 160vh;
+        top: 165vh;
     }
 
     .spacing {
@@ -861,6 +841,10 @@ h2 {
     .What-D4SD {
         margin-top: 5%;
         align-items: center;
+    }
+
+    #about {
+        padding-top: 80vh;
     }
 }
 
